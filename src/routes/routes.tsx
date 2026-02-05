@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import {  createHashRouter } from "react-router-dom";
 import UserPages from "../pages/UserPages";
 import DashBoard from "../pages/DashBoard";
 import UpdatePage from "../pages/UpdatePage";
 import DisplayUser from "../pages/DisplayUser";
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: "/",
     element: <DashBoard />,
