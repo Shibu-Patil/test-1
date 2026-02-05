@@ -1,5 +1,5 @@
 export interface User {
-  id?: string; // optional because new user may not have id yet
+  id?: string; 
   firstName: string;
   lastName: string;
   phone: string;

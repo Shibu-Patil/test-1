@@ -62,7 +62,7 @@ src/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/user-management-app.git
+git clone https://github.com/Shibu-Patil/test-1.git
 cd user-management-app
 Install dependencies:
 

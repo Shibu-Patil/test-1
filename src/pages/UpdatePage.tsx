@@ -70,7 +70,7 @@ const UpdatePage = () => {
             disabled={loading}
             className="w-full h-10 text-white bg-black rounded-xl font-bold hover:scale-105 duration-75 active:bg-red-400 active:scale-90 flex justify-center items-center gap-3"
           >
-            {loading ? <Loader text="Updating...." /> : "Update"}
+            {loading ? <Loader text="Updating" /> : "Update"}
           </button>
         </form>
       </div>
