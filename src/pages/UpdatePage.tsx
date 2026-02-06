@@ -36,7 +36,7 @@ const UpdatePage = () => {
     e.preventDefault();
 
     try {
-    await dispatch(updateUser({ id: user.id!, data: formData as User }));
+    await dispatch(updateUser({ id: user._id!, data: formData as User }));
       navigate("/display");
     } catch (err) {
       console.error(err);

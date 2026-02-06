@@ -126,7 +126,7 @@ const userSlice = createSlice({
       // UPDATE
       .addCase(updateUser.fulfilled, (state, action: PayloadAction<User>) => {
         const index = state.users.findIndex(
-          (u) => u.id === action.payload.id
+          (u) => u._id === action.payload._id
 
         );
         if (index !== -1) {
@@ -149,7 +149,7 @@ const userSlice = createSlice({
       .addCase(deleteUser.fulfilled, (state, action: PayloadAction<string>) => {
         state.loading = false;
         state.users = state.users.filter(
-          (u) => u.id !== action.payload
+          (u) => u._id !== action.payload
         );
       }).addCase(deleteUser.pending, (state) => {
         state.loading = true;

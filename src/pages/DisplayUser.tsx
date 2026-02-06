@@ -73,7 +73,7 @@ const DisplayUser = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {users.map((user) => (
             <div
-              key={user.id}
+              key={user._id}
               className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition"
             >
               {userFields.map((field) => (
@@ -91,7 +91,7 @@ const DisplayUser = () => {
                   Update
                 </button>
                 <button
-                  onClick={() => handleOpenPopup(user.id!)}
+                  onClick={() => handleOpenPopup(user._id!)}
                   className="flex-1 px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
                 >
                   Delete
